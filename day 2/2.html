@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document file 2</title>
+    <!-- How to link external css -->
+    <link rel="stylesheet" href="2.css" />
+</head>
+
+<body>
+    <span style="color: aliceblue;background-color: black;">Inside span tag line 1</span>
+    <span style="color: aliceblue;background-color: palevioletred;">Inside span tag line 1</span>
+    <span style="color: aliceblue;background-color: red;">Inside span tag line 3</span>
+    <!-- External styling (loosly coulpled) reuse the styling -->
+    <div class="common-style">external css line 1</div>
+    <div class="common-style">external css line 1</div>
+    <div class="common-style">external css line 1</div>
+
+    <!--by using display flex we can align elements horizontally adjacent to each other-->
+    <!--parent block-->
+    <div style="display:flex; justify-content:center; align-items:flex-end; height: 50px;background-color: yellow;">
+        <!--child block 1-->
+        <div style="background-color: tomato;">child block no 1</div>
+        <!--child block 2-->
+        <div style="background-color: turquoise;">child block no 1</div>
+    </div>
+</body>
+
+</html>
