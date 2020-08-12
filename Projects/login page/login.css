@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: sans-serif;
+    justify-content: center;
+    background: radial-gradient(
+        circle at top right,
+        #16222A, #3A6073
+      )
+}
+
+
+.login-box{
+    border:5px solid ghostwhite;
+    height: 330px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: chartreuse;
+    
+}
+
+input[type="text"]{
+    width: 150px;
+    padding: 5px;
+    font-family: cursive;
+}
+
+
+input[type="password"]{
+    width: 150px;
+    padding: 5px;
+    font-family: cursive;
+}
+
+input[type="checkbox"]{
+    font-family: cursive;
+}
+
+input[type="submit"]{
+    font-size: 20px;
+    padding: 3px;
+    width: 200px;
+    font-family: cursive;
+    margin: 5px;
+    cursor: pointer;
+}

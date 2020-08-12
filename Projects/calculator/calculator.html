@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="cal">
+        <form name="form">
+            <caption>
+                <h1>Calculator</h1>
+                <hr>
+            </caption>
+            <input id="output" type="text" name="display" readonly><br>
+            <input class="button" type="button" id="one" onclick="add(1)" value="1">
+            <input class="button" type="button" id="two" onclick="add(2)" value="2">
+            <input class="button" type="button" id="three" onclick="add(3)" value="3">
+            <input class="button" type="button" id="plus" onclick="add('+')" value="+"><br>
+            <input class="button" type="button" id="four" onclick="add(4)" value="4">
+            <input class="button" type="button" id="five" onclick="add(5)" value="5">
+            <input class="button" type="button" id="six" onclick="add(6)" value="6">
+            <input class="button" type="button" id="minus" onclick="add('-')" value="-"><br>
+            <input class="button" type="button" id="seven" onclick="add(7)" value="7">
+            <input class="button" type="button" id="eight" onclick="add(8)" value="8">
+            <input class="button" type="button" id="nine" onclick="add(9)" value="9">
+            <input class="button" type="button" id="multiply" onclick="add('*')" value="*"><br>
+            <input class="button" type="button" id="clear" onclick="clean()" value="C">
+            <input class="button" type="button" id="zero" onclick="add(0)" value="0">
+            <input class="button" type="button" id="equal" onclick="equal()" value="=">
+            <input class="button" type="button" id="divide" onclick="add('/')" value="/"><br>
+        </form>
+    </div>
+</body>
+<script src="calculator.js" type="text/javascript"></script>
+
+</html>

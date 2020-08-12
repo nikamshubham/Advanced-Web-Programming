@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color:grey;
+    height: 130vh;
+}
+
+.left-container{
+display: flex;
+flex: 1;
+background-color: cornflowerblue;
+justify-content: center;
+flex-direction: column;
+border: 2px solid red;
+align-items: center;
+}
+
+.right-container{
+display: flex;
+flex: 2.5;
+background-color: darkcyan;
+}
+
+.top-left{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 2px solid red;
+}
+
+.image{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    border: 2px black solid;
+}
+
+.bottom-left{
+    display: flex;
+    background-color: darkolivegreen;
+    flex-direction: column;
+    
+}
+
+.contact{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 15px;
+    
+}
+
+#link,#ln,#con,#ph,#em,#add{
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: bolder;
+    
+}
+
+
+.language{
+    margin-left: 15px;
+    margin-bottom: 10px;
+    border-bottom: black 2px solid;
+}
+
+.linkedin{
+    margin-bottom: 10px;
+    border-bottom: black 2px solid;
+}
+
+#mar,#hin,#eng,#in,#call,#a,#gmail{
+    font-size: 15px;
+    font-family: cursive;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+
+.email,.phone,.address{
+    margin-bottom: 10px;
+}
+
+#con{
+    border-bottom: black 2px solid;
+}
+
+
+
+
