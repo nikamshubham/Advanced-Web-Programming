@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.parent button{
+    font-size: 25px;
+    font-family: cursive;
+    font-weight: bold;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color: lightskyblue;
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

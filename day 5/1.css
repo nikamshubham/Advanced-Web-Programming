@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-image: url("https://picsum.photos/id/1006/1500/700");
+    background-repeat: no-repeat;
+}
+
+
+
+.main
+{
+    display: flex;
+    height: 100vh;
+    justify-content: center; 
+    align-items: center;
+    font-size: 64px;
+}
+
+.inner{
+    border: 5px solid gold;
+}
+
