@@ -1,0 +1,29 @@
+* JavaScript Array :-
+
+* JS Array are used to store multiple value in a single variable.
+* In here size is not required.
+
+# how to create an array :-
+var array_name = [item1, item2, ...];  
+
+e.g - let arr = ['shubham','nikam','mayur','patil','udayan','sawant'];
+
+# this is array of interger : - 
+e.g - var arr = [1,2,3,4,5]
+
+# you can create array of integer and string mix also
+e.g - let arr = ['one',2,'three',4]; 
+
+*Array index starts with 0 .
+
+# we can also add anonymous function or Arrow function in the array .
+e.g - var arr = [1,2,'three','four', ()=>{}];
+
+# How to print / iterate all the value of array
+for(let i = 0; i < arr.length; i++)
+{
+	console.log(arr[ i ]);
+}
+
+#To add an element in the array (bydefault it will add at end of the array)
+arr.push()

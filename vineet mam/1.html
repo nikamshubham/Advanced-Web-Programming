@@ -28,6 +28,7 @@
             <div>About Us</div>
             <div>Sign In</div>
         </div>
+
         <!--After nav bar this is the coding -->
         <div class="container-main" style="display: flex;
             background: url(wall.jpg); 
@@ -44,7 +45,7 @@
                 <div style="display: flex;flex-direction: column;">
                     <!-- name section -->
                     <div style="height: 70px;
-                    width: 80vh;
+                    width: 100%;
                     background-color: #00796A;
                     color: white;
                     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
@@ -52,7 +53,13 @@
                     ">
                         <div style="display: flex;align-items: center;flex-direction:row">
                             <div style="display: flex;align-items: center; padding: 5px; flex: 1;">
-                                <div><img src="circle.png" height="60px" alt=""></div>
+                                <div style="display: flex;align-items: center;">
+
+                                    <i class="fa fa-long-arrow-left" aria-hidden="true"
+                                        style="font-size: 30px;font-weight: 500;cursor: pointer;margin-right:15px;"></i>
+                                    <img src="circle.png" height="60px" alt="">
+
+                                </div>
                                 <div style="margin-left: 15px;font-size: 20px;font-weight: bold;font-family: cursive;">
                                     Shubham Nikam</div>
                             </div>
@@ -70,11 +77,23 @@
 
 
                     <!--Chat section-->
-                    <div>
-                        <div style="background-color: rgb(255,255,255);
-                        height: 25px;
-                        ">
-                            shubham nikam
+                    <div class="chat-container"
+                        style="height: 80vh;display: flex;justify-content: flex-start;flex-direction: row;">
+
+                        <div style="display: flex;align-items: flex-end ;">
+
+                            <input type="text" name="txt" id="txt" placeholder=" Type a message" style="width: 430px;
+                         border-radius: 50px;height: 6vh;margin: 5px; border: none;outline: none;">
+
+
+                            <button onclick="send()" style="background-color: #016B61;font-size: 25px; 
+                            cursor: pointer;
+                                outline: none; border-radius: 50%;margin: 5px; 
+                                box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                                            inset -2px -2px 3px rgba(0, 0, 0, .6); ">
+                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                            </button>
+
                         </div>
 
                     </div>
@@ -84,5 +103,6 @@
             </div>
         </div>
 </body>
+<script src="1.js"></script>
 
 </html>
