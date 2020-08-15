@@ -17,16 +17,21 @@
             <div style="font-family: cursive;color: chartreuse;font-weight: bolder;font-size: 35px;">Login Box</div>
             <br>
 
-            <form method="get" name="login" action="1.html" onsubmit="validate()">
-                <span>username</span>
-                <input id="uname" placeholder="username" type="text" name="uname">
+            <form method="get" name="login" action="#">
+                <label>username</label>
+                <input id="uname" placeholder="username" type="text" name="uname" autocomplete="off" max="5">
                 <br><br>
-                <span>password</span>
-                <input id="pass" placeholder="password" type="password" name="pwd">
+                <label>password</label>
+                <input id=" pass" placeholder="password" type="password" name="pwd">
+                <br><br>
+                <label for="pincode">
+                    pincode
+                </label>
+                <input type="number" name="" id="pin" min="400000" max="400012" maxlength="6" size="6">
+
                 <br>
-                <br>
-                <input type="checkbox" name="remember" id="">Remember me <br>
-                <input type="submit" name="btn" value="submit">
+                <input type="checkbox" name="remember" id="" required>Remember me <br>
+                <input type="submit" name="btn" value="submit" onclick=return validate()">
                 <br>
                 <p><input type="checkbox" name="signin" id="">Keep me sign in <br></p>
             </form>

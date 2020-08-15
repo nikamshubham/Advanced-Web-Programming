@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+
+</head>
+
+<body>
+    <div class="container-fluid " style="border: 5px solid green; ">
+
+        <!-- Nav bar -->
+        <div class="row bg-dark align-items-center sticky-top " style="height: 60px; ">
+
+            <div class=" col-4 col-md-6 text-light">My Project</div>
+            <div class="col-8 col-md-6 text-light  d-flex justify-content-end">
+                <button type="button" class="text-light btn btn-outline-secondary">Logout</button>
+
+            </div>
+        </div>
+
+
+        <!-- Row 1 (body)-->
+        <div class="row justify-content-center">
+
+            <div class="col-10 col-md-6 d-flex flex-column mt-1">
+
+                <div class="row " style="height: 320px; background-color: brown; border: 5px darkgoldenrod solid;">
+                    <div class="col d-flex justify-content-center align-items-center">
+                        <img src="https://picsum.photos/id/1019/380/300" alt="" style="object-fit: cover;">
+                    </div>
+                </div>
+
+                <!-- Row For Like and comment  -->
+                <div class="row mt-1 border" ">
+                    <!-- Like button-->
+                    <div class=" col-4 col-md-2 p-0">
+                    <button type="button" onclick="likeCounter()" id="likeid"
+                        class="btn btn-outline-secondary btn-block btn-sm">Like</button>
+                </div>
+                <!-- Comment text -->
+                <div class="col-4 col-md-8 p-0">
+                    <input type="text" name="cmt" id="cmt" class="form-control form-control-sm"
+                        placeholder="Enter Comment Here" style="border:1px solid brown;">
+                </div>
+                <!-- comment butt4on -->
+                <div class="col-4 col-md-2 p-0">
+                    <button type="button" class="btn btn-outline-secondary btn-block btn-sm">Comment</button>
+                </div>
+            </div>
+
+            <!-- Row for Content To be inserted dynamically-->
+            <!-- Comment under one box so that comment operation become easy -->
+            <div class="d-flex flex-column" id="commentContainerd-none">
+                <div class="row mt-1 " style="width: auto;">
+                    <div class="col-8 col-md-10 p-0">Comment Are inserted Here</div>
+                    <div class="col-4 col-md-2 p-0">
+                        <button class="btn btn-sm btn-outline-danger btn-block">Delete</button>
+                    </div>
+                </div>
+
+                <div class="row mt-1" style="width: auto;">
+                    <div class="col-8 col-md-10 p-0">Comment Are inserted Here</div>
+                    <div class="col-4 col-md-2 p-0">
+                        <button class="btn btn-sm btn-outline-danger btn-block">Delete</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    </div>
+
+</body>
+<script src="3.js"></script>
+
+</html>

@@ -33,6 +33,7 @@
 input[type="text"]{
     width: 150px;
     padding: 5px;
+    outline: none;
     font-family: cursive;
 }
 
@@ -40,6 +41,7 @@ input[type="text"]{
 input[type="password"]{
     width: 150px;
     padding: 5px;
+    outline:none;
     font-family: cursive;
 }
 

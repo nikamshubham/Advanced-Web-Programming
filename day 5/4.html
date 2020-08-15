@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Practice on like and comment part</title>
+</head>
+
+<body>
+    <div class="container-fluid" style="height: 100vh;">
+        <!-- Navbar Row-1 -->
+        <div class="row bg-dark justify-content-center align-item-center" style="height: 100px;">
+            <div class="col-md-6 col-12 text-light d-flex align-items-center justify-content-center"
+                style="font-size: 30px;font-weight: bolder;">
+                Practice on like and comment
+            </div>
+        </div>
+        <!-- Row-2 -->
+        <div class="row justify-content-center mt-5" style="height:300px">
+            <div class="col-12 col-md-6 bg-secondary">
+                <!--Content inside Row 2 -->
+                <!-- Row 2-1 -->
+                <div class="row justify-content-center mt-2">
+                    <div class="col-12 col-md-8 p-0">
+                        <input class="form-control " id="inputHere" type="text" name="like">
+                    </div>
+                </div>
+                <!-- Row 2-2 -->
+                <div class="row justify-content-around mt-1">
+                    <div class="col-4 col-md-2 p-0">
+                        <button class="btn btn-outline-light btn-block" id="likebtn" onclick="likeCounter()"
+                            style="font-size:20px;">Like</button>
+                    </div>
+                    <div class="col-4 col-md-2 p-0">
+                        <button class="btn btn-outline-light btn-block" id="cmtbtn" onclick="CommentHere()"
+                            style="font-size:20px;">Comment</button>
+                    </div>
+
+                </div>
+                <!--All dynamically enter comments come here box-->
+                <div class="row justify-content-center mt-1" id="parent">
+                    <div class="col-12 col-md-8">
+                        <div id="child">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Row-3 -->
+
+
+    </div>
+
+</body>
+<script src="4.js"></script>
+
+</html>

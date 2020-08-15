@@ -8,8 +8,7 @@ function validate() {
 
 
     if (uname == "" || pwdd == "") {
-        alert("Both fields should not be empty");
-        return;
+        console.log("both fields are empty");
     }
     if (pwdd.length < 4 || pwdd.length > 12) {
         alert("Password must be min 5 and max 12 characters");

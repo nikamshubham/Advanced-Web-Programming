@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        .container {
+            height: 100vh;
+            background-color: cadetblue;
+        }
+
+        .cmt-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: chartreuse;
+            height: 200px;
+
+        }
+
+        .hardcode {
+            padding: 10px;
+            margin-bottom: 10px;
+            font-family: cursive;
+            font-size: 30px;
+        }
+
+        .cmt {
+            width: 30%;
+            height: 20px;
+            outline: none;
+        }
+
+        button {
+            padding: 5px;
+            margin-top: 5px;
+            width: 100px;
+            background-color: darkcyan;
+            font-size: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="cmt-box">
+            <div class="hardcode" style="border: cadetblue 2px solid;">Please Enter Comments </div>
+            <input class="cmt" id="comment" type=" text" name="txt" id="cmt">
+            <button onclick="commentHere()">Click</button>
+        </div>
+        <!-- dynamically enter comments come in this div-->
+        <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;" class="dynamic"
+            id="parent">
+
+        </div>
+
+
+</body>
+<script src="likecmt.js"></script>
+
+</html>
