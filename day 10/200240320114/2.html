@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Question No 2 form</title>
+    <link rel="stylesheet" href="2.css">
+</head>
+
+<body>
+    <div class="container-fluid bg-primary" style="height: 100vh;background-image: linear-gradient(darkorange,gold);">
+        <div class="row bg-dark justify-content-center">
+            <div class="header" style=" color: white; font-weight: bolder;font-size: 40px;">Simple Form</div>
+        </div>
+
+        <form action="#" style="margin-top: 50px;">
+            <div>
+                <label class="uname" for="Username">Username</label>
+                <input class="form-control" type="text" name="Username" id="uname" required autocomplete="off">
+            </div>
+            <br>
+            <div>
+                <label class="uname" for="Password">Password</label>
+                <input class="form-control" type="password" name="password" id="pwd" required>
+            </div>
+            <br>
+            <button onclick="sumbitform()" class="btn btn-danger" type="submit" style="box-shadow: inset 2px 2px 3px rgba(255,255,255,0.6)
+            inset -2px -2px 3px rgba(0,0,0,0.6);">Submit</button>
+
+        </form>
+        <br>
+        <div class="output">
+            <div style="font-size:20px ;">Username :</div>
+            <p id="username"></p>
+            <div style="font-size:20px ;">Password :</div>
+            <p id="password"></p>
+        </div>
+
+    </div>
+</body>
+<script src="2.js"></script>
+
+</html>

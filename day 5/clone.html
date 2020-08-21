@@ -58,14 +58,17 @@
         </div>
         <!-- dynamically enter comments come in this div-->
         <div style="background-color: darkgoldenrod;" id="parent">
-            <div>
-                <div id="child1">Sample Comment</div>
-                <button id="child2" onclick="deletecmt()">Delete</button>
+            <!-- Sample reference comment -->
+            <div id="referenceId"
+                style="display: flex; justify-content: space-evenly;margin-top: 2px; visibility:hidden;">
+                <div id="child1" style="border: 2px solid white;">Sample Reference Comment</div>
+                <button id="child2" onclick="deletecmt(this)">Delete</button>
             </div>
+
         </div>
 
 
 </body>
-<script src="likecmt.js"></script>
+<script src="clone.js"></script>
 
 </html>

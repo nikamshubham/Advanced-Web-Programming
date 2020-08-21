@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Covid data</title>
+    <script src="covid.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <style>
+        .container-fluid {
+            margin: 0px;
+            height: 100vh;
+            background-image: url(covid2.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .col-4,
+        col-md-4,
+        d-flex,
+        justify-content-center {
+            font-family: cursive;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid bg-secondary">
+        <div class="row mt-7 justify-content-center">
+            <div class="col-12 col-md-6 d-flex justify-content-center text-light"
+                style="font-family: cursive;font-size: 25px;font-weight: bolder;">
+                <h1 class="text-center mt-3" style="color: red;font-weight: bolder;">
+                    Corona Virus Report
+                </h1>
+            </div>
+
+        </div>
+        <div class="row text-light mt-2 justify-content-center align-item-center"
+            style="font-family: cursive; font-size: 25px; ">
+            <div class="col-3 col-md-3 d-flex justify-content-center">Total Confirmed Cases</div>
+            <div class="col-3 col-md-3 d-flex justify-content-center">Total Death Cases</div>
+            <div class="col-3 col-md-3 d-flex justify-content-center">Total Recoverd Cases</div>
+        </div>
+        <div class="row mt-2 " style="justify-content:center;">
+            <div class="col-2 col-md-4 d-flex justify-content-end"><input type="text" class="form-control" id="id1"
+                    aria-label="Sizing example input" disabled aria-describedby="inputGroup-sizing-sm"
+                    style="width: 150px;"></div>
+            <div class="col-2 col-md-4 d-flex justify-content-center"><input type="text" class="form-control" id="id2"
+                    aria-label="Sizing example input" style="width: 150px;" disabled
+                    aria-describedby="inputGroup-sizing-sm"></div>
+            <div class="col-2 col-md-4 d-flex justify-content-start"><input type="text" class="form-control" id="id3"
+                    aria-label="Sizing example input" style="width: 150px;" disabled
+                    aria-describedby="inputGroup-sizing-sm"></div>
+        </div>
+        <!-- Search box -->
+        <div class="row mt-5 justify-content-center">
+            <div class="col-6 col-md-12" id="city" style="display: flex;justify-content: center;">
+                <input type="text" class="form-control" aria-label="Sizing example input"
+                    placeholder="Enter Country Name" aria-describedby="inputGroup-sizing-sm" id="search"
+                    style="width:300px;">
+            </div>
+            <div class="col-6 col-md-6 mt-2" style=" display: flex;justify-content: center;"><button type="button"
+                    onclick="getData()" class="btn btn-danger" style="outline: none;">Submit</button></div>
+        </div>
+
+        <div id="id4" class="row mt-4 justify-content-center text-light" style="font-family: cursive;">
+            <div class="col-3 col-md-5 d-flex justify-content-end">Total Confirmed</div>
+            <div class="col-6 col-md-7 "><input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm" style="width:200px;"></div>
+        </div>
+
+        <div id="id5" class="row mt-2 justify-content-center text-light" style="font-family: cursive;">
+            <div class="col-3 col-md-5 d-flex justify-content-end">Total Death</div>
+            <div class="col-6 col-md-7"><input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm" style="width:200px;"></div>
+        </div>
+
+        <div id="id6" class="row mt-2 justify-content-center text-light" style="font-family: cursive;">
+            <div class="col-3 col-md-5 d-flex justify-content-end">Total Recoverd</div>
+            <div class="col-6 col-md-7"><input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm" style="width:200px;"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

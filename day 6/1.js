@@ -1,20 +1,17 @@
+var like = 1;
+var comment = 1;
 
-function dyncomment() {
-    let usercomment = document.querySelector(".commentbox").children[2].value;
+function commentHere() {
+    let newElement = document.createElement("div");
+    newElement.textContent = "comment" + comment;
 
-    let x = document.createElement('div');
-    x.style.backgroundColor = 'skyblue';
-    x.style.fontSize = '20px'
-    x.style.padding = '5px';
-    x.style.margin = "4px";
-    x.textContent = usercomment;
-    document.querySelector('.container').appendChild(x);
 
+
+    comment++;
 }
 
-let likecounter = 1;
-function dynlike() {
-    let y = document.querySelector("#like");
-    y.innerHTML = "like" + likecounter;
-    likecounter++;
+
+
+function likeHere() {
+
 }
